@@ -1,0 +1,241 @@
+header {
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header img {
+    height: auto;
+    max-height: 100px;
+    transition: transform 0.3s ease;
+    width: auto;
+}
+.background-image {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 650px;
+}
+
+header img:hover {
+    transform: scale(1.5);
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+    margin-right: 0;
+}
+
+.navbar-links li a {
+    border: 3px solid rgba(255, 255, 255, 0.219);
+    color: white;
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 10px 20px; 
+    position: relative;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px; 
+}
+
+.navbar-links li a:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+.navbar-links li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+}
+.navbar-links li a:active {
+    color: #ff0000; 
+}
+footer {
+    background-image: url(../imgs/footer-bg.jpg);
+    /* https://www.istockphoto.com/illustrations/dark-blue-medical-background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    /* I found onto the 'backdrop-filter' property when looking into complicated CSS methods for producing trendy UI effects. 
+    This attribute enables the use of graphical effects to an element's background, such as color shifting or blurring, to produce the appearance of frosted glass.  */
+}
+
+.logo {
+    margin-right: 5px;
+}
+
+.logo img {
+    height: auto;
+    max-height: 150px;
+    width: auto;
+    max-width: 200px; 
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.logo-email,
+.logo-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-email img,
+.logo-phone img {
+    height: 20px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.Email {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Email:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links img {
+    height: 120px;
+    width: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.phone-number {
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* Tablet View */
+@media only screen and (max-width: 1024px) {
+    header img {
+        max-height: 80px; 
+    }
+    .background-image {
+        height: 400px; 
+    }
+
+    .navbar-links li {
+        margin-right: 0;
+    }
+
+    .navbar-links li a {
+        font-size: 20px;
+    }
+
+    .social-links img {
+        height: 70px;
+    }
+
+    .logo img {
+        max-height: 100px;
+        max-width: 150px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0; 
+    }
+    .background-image {
+        height: 300px; 
+    }
+
+    header img {
+        max-height: 60px; 
+    }
+    .navbar-links li {
+        margin-right: 0; 
+    }
+    
+    .navbar-links li a {
+        font-size: 12px; 
+    }
+
+    .social-links img {
+        height: 50px; 
+    }
+
+   
+    .logo img {
+        max-height: 80px; 
+    }
+
+    .social-links img {
+        height: 40px;
+    }
+
+    .footer {
+        padding: 10px; 
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+   
+}

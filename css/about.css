@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgba(173, 125, 97, 255);
+    font-family: Arial, sans-serif;
+}
+
+.navbar-links li a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url('../imgs/about-me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+.about-me {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-me h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+section h2 {
+    text-align: center;
+    color: #ed6464;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section p a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+th {
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+}
+/* Project Section */
+.projects {
+    margin-top: 40px;
+}
+
+.projects h3 {
+    color: #ed6464;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out; /* Transition effect for heading color change */
+}
+
+.projects h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+    border: 2px solid wheat; /* Transition effect for project heading color change */
+}
+
+.projects p {
+    color: #ddd;
+    margin-bottom: 15px;
+   
+}
+
+.projects p a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Transition effect for link color change */
+}
+
+.projects h4:hover,
+.projects p a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+/* Hover effect on project heading */
+.projects h4:hover {
+    transform: scale(1.0); /* Scale effect on hover */
+}
+
+/* Tablet and Mobile View */
+@media only screen and (max-width: 1024px) {
+    .background-image {
+        height: 400px;
+    }
+
+    .about-me h1 {
+        font-size: 24px;
+    }
+
+    section {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
